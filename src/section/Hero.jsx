@@ -17,6 +17,8 @@ const Hero = () => {
                 <PerspectiveCamera makeDefault position={[0, 0, 30]} />
             </Canvas>
 
+
+
         </div>
 
     </section>
