@@ -40,11 +40,11 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans hover:bg-black-500 sm:w-full sm:rounded-md py-2 sm:px-5;
+    @apply text-neutral-400 hover:text-white font-generalsans hover:bg-black-500 sm:w-full sm:rounded-md py-2 sm:px-5 duration-400 transition-colors ease-in-out poiter-cursor;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-base hover:text-white transition-colors duration-400;
   }
 
   .nav-sidebar {
