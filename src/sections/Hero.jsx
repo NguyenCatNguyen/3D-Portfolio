@@ -1,5 +1,8 @@
 import React from 'react';
 import { words } from '../constants/index.js';
+import Button from "../components/Button";
+import HeroExperience from '../components/HeroExperience.jsx';
+
 
 const Hero = () => {
   return (
@@ -29,14 +32,28 @@ const Hero = () => {
                             </span>
                         </span>
                     </h1>
+                    
                     <h1>into Real Projects</h1>
                     <h1>that Deliver Results</h1>
                 </div>
-
+                <p className="text-white-50 md:text-xl relative z-10 pointer-events-none max-w-[600px]">
+                    Hi, I’m Cat Nguyen, a frontend software engineer with a strong 
+                    passion for building visually stunning 3D websites and beautiful UI/UX designs.
+                </p>
+                <Button
+                text="See My Work"
+                className="md:w-80 md:h-16 w-60 h-12"
+                id="counter"
+                />
             </header>
 
-
             {/* RIGHT 3D MODEL */}
+            <figure>
+                <div className='hero-3d-layout'>
+                    <HeroExperience/>
+
+                </div>
+            </figure>
         </div>
     </section>
   )
