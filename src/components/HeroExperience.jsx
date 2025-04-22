@@ -9,7 +9,7 @@ const HeroExperience = () => {
   return (
     <Canvas  camera={{ position: [0, 0, 15], fov: 45 }}>
         <ambientLight intensity={0.2} color="#1a1a40" />
-        <directionalLight position={[10,20,5]} intensity={1} />
+        <directionalLight position={[5,5,5]} intensity={1} />
         <OrbitControls 
             enablePan = {false} // Disable panning handling
             enableZoom = {!isTablet} // Allow zoom to happen on an PC and not a tablet
