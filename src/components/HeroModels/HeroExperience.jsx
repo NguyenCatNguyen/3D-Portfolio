@@ -28,22 +28,24 @@ const HeroExperience = () => {
         <ambientLight intensity={0.2} color="#1a1a40" />
         <directionalLight position={[5, 5, 5]} intensity={3} />
         <group
-          position={[0, 0, -0.6]}
+          position={[-0.3, 0, -0.6]}
           rotation={[0.6, -0.8, 0]}
           scale={isMobile? 0.6 : 0.80}
           position-y={isMobile ? -1 : -0.4}
+          
           // position={[posX, posY, posZ]}
           // rotation={[rotX, rotY, rotZ]}
           // scale={scale}
           >
           <PresentationControls
+            enabled= {isMobile ? false : true}
             azimuth={[-1, 0.75]}
             polar={[-0.4, 0.2]}
             damping={0.6}
             config={ { mass: 2, tension: 400 } }
             snap
             >
-            <Float rotationIntensity={1}>
+            <Float rotationIntensity={0.7}>
               <Room/>
             </Float>
           </PresentationControls>
