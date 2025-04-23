@@ -94,6 +94,11 @@ gh repo clone NguyenCatNguyen/3D-Portfolio
 
 ## 📚 Education section
 ### Three.js Notes
+#### ✨ Conver GLB to JSX
+```bash
+npx gltfjsx model_name.glb
+```
+
 1. Canvas
     - Canvas is the container for all the 3D objects.
     - Everything inside the Canvas is a 3D object.
