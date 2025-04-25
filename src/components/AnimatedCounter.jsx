@@ -11,11 +11,11 @@ const AnimatedCounter = () => {
             {counterItems.map((item, i) => (
                 <div
                 key={i}
-                className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center">
-                    <div className="counter-number text-white-50 text-5xl font-bold mb-2">
+                className="bg-zinc-900 rounded-lg p-5 sm:p-10 flex flex-col justify-center">
+                    <div className="counter-number text-white-50 text-3xl sm:text-5xl font-bold mb-2">
                          <CountUp suffix={item.suffix} end={item.value} duration={3} />
                     </div>
-                    <div className="text-white-50 text-lg">{item.label}</div>
+                    <div className="text-white-50 text-md sm:text-lg">{item.label}</div>
 
                 </div>
             ))}

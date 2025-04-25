@@ -25,6 +25,7 @@ const ShowcaseSection = () => {
 
         )
 
+        // Project Animation
         const cards = [P1ref.current, P2ref.current, P3ref.current];
         cards.forEach((card, index) => {
             gsap.fromTo(
@@ -37,7 +38,7 @@ const ShowcaseSection = () => {
                 y: 0,
                 opacity: 1,
                 duration: 1,
-                delay: 0.3 * (index + 1),
+                delay: 0.3 * (index + 1), // Delay each card appear
                 scrollTrigger: {
                 trigger: card,
                 start: "top bottom-=80",

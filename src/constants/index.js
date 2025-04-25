@@ -70,8 +70,8 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Modern Front-End Technologies",
+    desc: "Building dynamic UIs with React, TailwindCSS, and up-to-date JavaScript (ES6+) practices.",
   },
   {
     imgPath: "/images/chat.png",
@@ -79,9 +79,14 @@ const abilities = [
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/git.png",
+    title: "Git, Github, & Version Control",
+    desc: "Efficient branching, merging, and pull-request workflows to collaborate smoothly on GitHub.",
+  },
+  {
+    imgPath: "/images/ui.png",
+    title: "Responsive & Mobile-First Design",
+    desc: "Crafting layouts that adapt seamlessly across devices for an optimal user experience.",
   },
 ];
 
