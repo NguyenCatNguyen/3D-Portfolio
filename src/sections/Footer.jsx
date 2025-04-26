@@ -1,4 +1,17 @@
-import { socialImgs } from "../constants";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { MdPictureAsPdf } from "react-icons/md";
+
+
+
+const FooterIcon = ({icon, socialLink}) => {
+  return (
+    <a href={socialLink} className="icon" target="_blank" rel="social icon">
+      {icon}
+    </a>
+  )
+}
+
 
 const Footer = () => {
   return (
@@ -8,11 +21,9 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </div>
         <div className="socials">
-          {socialImgs.map((socialImg, index) => (
-            <div key={index} className="icon">
-              <img src={socialImg.imgPath} alt="social icon" />
-            </div>
-          ))}
+          <FooterIcon icon={<FaLinkedin className="logo-icon" />} socialLink="https://www.linkedin.com/in/catnguyen1/" />
+          <FooterIcon icon={<FaSquareGithub className="logo-icon"  />} socialLink="https://github.com/NguyenCatNguyen" />
+          <FooterIcon icon={<MdPictureAsPdf className="logo-icon" />} socialLink="./pdf/CatNguyen.pdf" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">

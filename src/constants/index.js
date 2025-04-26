@@ -245,24 +245,6 @@ const testimonials = [
   },
 ];
 
-const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
-  },
-];
 
 export {
   words,
@@ -272,7 +254,6 @@ export {
   expCards,
   expLogos,
   testimonials,
-  socialImgs,
   techStackIcons,
   techStackImgs,
   navLinks,

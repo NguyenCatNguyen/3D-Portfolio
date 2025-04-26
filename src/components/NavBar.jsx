@@ -2,18 +2,30 @@ import { useState, useEffect } from "react";
 import { navLinks } from "../constants/index.js";
 
 const NavBar = () => {
-    const [scrolled, setScrolled] = useState(false);
-    useEffect(() =>{
-        const handleScroll = () => {
-            const isScrolled = window.scrollY > 10; // Set a value to determine when the navbar should change
-            setScrolled(true);
+    const [hidden, setHidden] = useState(false);
+    const [prevScrollY, setPrevScrollY] = useState(0);
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > prevScrollY && currentScrollY > 100) {
+          setHidden(true);
+        } else {
+          setHidden(false);
         }
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    })
+        
+        setPrevScrollY(currentScrollY);
+      };
+  
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollY]);
+  
 
   return (
-    <header className="navbar scrolled">
+    <header className={`navbar ${
+      hidden ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'
+    }`}>
       <div className="inner">
         <a href="#hero" className="logo">
           Cat Nguyen

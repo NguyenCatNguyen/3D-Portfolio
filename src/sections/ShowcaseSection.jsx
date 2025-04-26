@@ -2,16 +2,32 @@ import { useRef } from 'react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { FaGithubAlt } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
+
 
 gsap.registerPlugin(ScrollTrigger) // Register the ScrollTrigger plugin to allow GSAP to use it
 
+const Link = ({webLink, gitLink}) => {
+    return (
+        <div className='flex items-center'>
+            <a href={webLink} target='_blank' className='web-btn'>
+              <FaLink className=' size-5' />
+            </a>
+            <a href={gitLink} target='_blank' className='web-btn'>
+              <FaGithubAlt className='size-5' />
+            </a>
+
+        </div>
+    )
+}
+
+// Animation for cards in showcase section
 const ShowcaseSection = () => {
     const sectionRef = useRef(null);
     const P1ref = useRef(null);
     const P2ref = useRef(null);
     const P3ref = useRef(null);
-
-  
 
 
     // Section Animation
@@ -40,13 +56,15 @@ const ShowcaseSection = () => {
                 duration: 1,
                 delay: 0.3 * (index + 1), // Delay each card appear
                 scrollTrigger: {
-                trigger: card,
-                start: "top bottom-=80",
+                    trigger: card,
+                    start: "top 85%",
+                  
+                    toggleActions: "play reverse play reverse",
                 },
             }
             );
         });
-    })
+    }) 
 
   return (
     <div id='work' ref={sectionRef} className="app-showcase">
@@ -59,13 +77,16 @@ const ShowcaseSection = () => {
                     </div>
                 <div className="text-content">
                     <h2>
-                        On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                        called Ryde
+                        Zentry Gaming — A Frontend Developer’s Approach to Esports UI
                     </h2>
                     <p className="text-white-50 md:text-xl">
-                        An app built with React Native, Expo, & TailwindCSS for a fast,
+                        A web built with React, TailwindCSS and GSAP for a fast,
                         user-friendly experience.
                     </p>
+                    <Link 
+                        webLink="https://nguyencatnguyen.github.io/ZentryGaming/"
+                        gitLink="https://github.com/NguyenCatNguyen/ZentryGaming"
+                     />
                 </div>
                 </div>
 
@@ -74,20 +95,19 @@ const ShowcaseSection = () => {
                 {/* RIGHT */}
                 <div className="project-list-wrapper overflow-hidden">
                     <div className="project" ref={P2ref} >
-                    <div className="image-wrapper bg-[#FFEFDB]">
-                        <img
-                        src="/images/project2.png"
-                        alt="Library Management Platform"
-                        />
+                    <div className="image-wrapper bg-[#51080d] mb-2 ">
+                        <img src="/images/project2.png" alt="Library Management Platform" /> 
                     </div>
-                    <h2>The Library Management Platform</h2>
+                    <h2 className='pb-2'>3D Profolio</h2>
+                    <Link gitLink="https://github.com/NguyenCatNguyen/3D-Portfolio" />
                     </div>
 
                     <div className="project" ref={P3ref} >
-                    <div className="image-wrapper bg-[#FFE7EB]">
+                    <div className="image-wrapper bg-[#274272] project-hover">
                         <img src="/images/project3.png" alt="YC Directory App" />
                     </div>
-                    <h2>YC Directory - A Startup Showcase App</h2>
+                    <h2 className='pb-2'>ZeldaWiki- BOTW Compedium</h2>
+                    <Link webLink="https://nguyencatnguyen.github.io/ZeldaWIki/" gitLink="https://github.com/NguyenCatNguyen/ZeldaWIki"/>
                     </div>
                 </div>
     
