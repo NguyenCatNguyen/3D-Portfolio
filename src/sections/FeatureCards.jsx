@@ -1,7 +1,20 @@
-import { abilities } from "../constants";
+import { abilities, skills } from "../constants";
+import TitleHeader from "../components/TitleHeader";
 
 const FeatureCards = () => (
-  <div className="w-full padding-x-lg">
+  <div id="skills" className="w-full padding-x-lg">
+    <TitleHeader
+      title="✨ My Skills ✨"/>
+
+    <div className="flex flex-wrap justify-center mb-10">
+      {skills.map(({name,imgPath, i}) => (
+        <div key={i} className="bg-black-50 rounded-md sm:w-[170px] w-[150px] py-4 px-3 m-2 font-bold flex items-center">
+          <img src={imgPath} alt="" className="size-5 sm:size-7 mr-2"/>
+          <p className="text-[14px] sm:text-[17px]">{name}</p>
+        </div>
+      ))}
+    </div>
+    
     <div className="mx-auto grid-4-cols">
       {abilities.map(({ imgPath, title, desc }) => (
         <div

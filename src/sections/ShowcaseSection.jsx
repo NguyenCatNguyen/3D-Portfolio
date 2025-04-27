@@ -95,7 +95,7 @@ const ShowcaseSection = () => {
                 {/* RIGHT */}
                 <div className="project-list-wrapper overflow-hidden">
                     <div className="project" ref={P2ref} >
-                    <div className="image-wrapper bg-[#51080d] mb-2 ">
+                    <div className="image-wrapper py-5 bg-[#51080d] mb-2 ">
                         <img src="/images/project2.png" alt="Library Management Platform" /> 
                     </div>
                     <h2 className='pb-2'>3D Profolio</h2>
@@ -103,7 +103,7 @@ const ShowcaseSection = () => {
                     </div>
 
                     <div className="project" ref={P3ref} >
-                    <div className="image-wrapper bg-[#274272] project-hover">
+                    <div className="image-wrapper py-5 bg-[#274272] project-hover">
                         <img src="/images/project3.png" alt="YC Directory App" />
                     </div>
                     <h2 className='pb-2'>ZeldaWiki- BOTW Compedium</h2>

@@ -1,17 +1,30 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
-  },
-  {
     name: "Experience",
     link: "#experience",
+  },
+  {
+    name: "Work",
+    link: "#work",
   },
   {
     name: "Skills",
     link: "#skills",
   },
 ];
+
+const skills = [
+  { name: "HTML", imgPath: "/images/html.png"},
+  { name: "CSS", imgPath: "/images/css.png"},
+  { name: "JavaScript", imgPath: "/images/js.png"},
+  { name: "Python", imgPath: "/images/python.png"},
+  { name: "GSAP", imgPath: "/images/gsap.png"},
+  { name: "React", imgPath: "/images/react.png"},
+  { name: "Three.js", imgPath: "/images/threejs.png"},
+  { name: "Tailwind CSS", imgPath: "/images/tailwindcss.png"},
+  { name: "Git & GitHub", imgPath: "/images/github.png"},
+  { name: "Framer", imgPath: "/images/framer.png"},
+]
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.png" },
@@ -257,4 +270,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  skills,
 };

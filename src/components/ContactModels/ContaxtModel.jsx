@@ -11,11 +11,11 @@ const ContaxtModel = () => {
       <PresentationControls
         enabled={false}>
         <group
-          position={[1,-2, -3]} // Centered horizontally
+          position={[0.2,-2, -3]} // Centered horizontally
           rotation={[0, 0, 0]} // No rotation for straight-on view
-          scale={0.1}
+          scale={0.12}
           >
-          <Float rotationIntensity={0.7}>
+          <Float rotationIntensity={1}>
             <Tamagotchi/>
           </Float>
         </group>
