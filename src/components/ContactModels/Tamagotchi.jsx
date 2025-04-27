@@ -1,8 +1,9 @@
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
+import ContactModel from '../../../public/models/tamagotchi.glb?url'
 
 export function Tamagotchi(props) {
-  const { nodes, materials } = useGLTF('./models/tamagotchi.glb')
+  const { nodes, materials } = useGLTF(ContactModel)
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -36,6 +37,6 @@ export function Tamagotchi(props) {
     </group>
   )
 }
-useGLTF.preload('./models/tamagotchi.glb')
+useGLTF.preload(ContactModel)
 
 export default Tamagotchi

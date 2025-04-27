@@ -1,9 +1,10 @@
 
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
+import littleRoom from '../../../public/models/little_room.glb?url'
 
 export function Room(props) {
-  const { nodes, materials } = useGLTF('./models/little_room.glb')
+  const { nodes, materials } = useGLTF(littleRoom)
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.232}>
@@ -16,4 +17,4 @@ export function Room(props) {
   )
 }
 
-useGLTF.preload('./models/little_room.glb')
+useGLTF.preload(littleRoom)

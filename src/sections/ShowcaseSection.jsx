@@ -58,6 +58,7 @@ const ShowcaseSection = () => {
                 scrollTrigger: {
                     trigger: card,
                     start: "top 85%",
+                    end: "bottom 15%",
                   
                     toggleActions: "play reverse play reverse",
                 },
@@ -73,7 +74,7 @@ const ShowcaseSection = () => {
                 {/* LEFT */}
                 <div className="first-project-wrapper" ref={P1ref} >
                     <div className="image-wrapper" >
-                        <img src="/images/project1.png" alt="Zelda Wiki Compedium" />
+                        <img src="/3D-Portfolio/images/project1.png" alt="Zelda Wiki Compedium" />
                     </div>
                 <div className="text-content">
                     <h2>
@@ -96,7 +97,7 @@ const ShowcaseSection = () => {
                 <div className="project-list-wrapper overflow-hidden">
                     <div className="project" ref={P2ref} >
                     <div className="image-wrapper py-5 bg-[#51080d] mb-2 ">
-                        <img src="/images/project2.png" alt="Library Management Platform" /> 
+                        <img src="/3D-Portfolio/images/project2.png" alt="Library Management Platform" /> 
                     </div>
                     <h2 className='pb-2'>3D Profolio</h2>
                     <Link gitLink="https://github.com/NguyenCatNguyen/3D-Portfolio" />
@@ -104,7 +105,7 @@ const ShowcaseSection = () => {
 
                     <div className="project" ref={P3ref} >
                     <div className="image-wrapper py-5 bg-[#274272] project-hover">
-                        <img src="/images/project3.png" alt="YC Directory App" />
+                        <img src="/3D-Portfolio/images/project3.png" alt="YC Directory App" />
                     </div>
                     <h2 className='pb-2'>ZeldaWiki- BOTW Compedium</h2>
                     <Link webLink="https://nguyencatnguyen.github.io/ZeldaWIki/" gitLink="https://github.com/NguyenCatNguyen/ZeldaWIki"/>
