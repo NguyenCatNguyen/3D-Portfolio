@@ -58,8 +58,6 @@ const ShowcaseSection = () => {
                 scrollTrigger: {
                     trigger: card,
                     start: "top 85%",
-                    end: "bottom 15%",
-                  
                     toggleActions: "play reverse play reverse",
                 },
             }
@@ -73,9 +71,11 @@ const ShowcaseSection = () => {
             <div className="showcaselayout">
                 {/* LEFT */}
                 <div className="first-project-wrapper" ref={P1ref} >
-                    <div className="image-wrapper" >
-                        <img src="/3D-Portfolio/images/project1.png" alt="Zelda Wiki Compedium" />
-                    </div>
+                    <a href="https://nguyencatnguyen.github.io/ZentryGaming/" target="_blank" className='hover:translate-y-[-5px] duration-400 transform ease-in-out'>
+                        <div className="image-wrapper" >
+                            <img src="/3D-Portfolio/images/project1.png" alt="Zelda Wiki Compedium" />
+                        </div>
+                    </a>
                 <div className="text-content">
                     <h2>
                         Zentry Gaming — A Frontend Developer’s Approach to Esports UI
@@ -96,16 +96,20 @@ const ShowcaseSection = () => {
                 {/* RIGHT */}
                 <div className="project-list-wrapper overflow-hidden">
                     <div className="project" ref={P2ref} >
-                    <div className="image-wrapper py-5 bg-[#51080d] mb-2 ">
-                        <img src="/3D-Portfolio/images/project2.png" alt="Library Management Platform" /> 
+                    <div className="image-wrapper py-5 bg-[#51080d] mb-2  hover:translate-y-[-5px] duration-400 transform ease-in-out">
+                        <a href="https://nguyencatnguyen.github.io/ZentryGaming/" target="_blank">
+                            <img src="/3D-Portfolio/images/project2.png" alt="Library Management Platform" /> 
+                        </a>
                     </div>
                     <h2 className='pb-2'>3D Profolio</h2>
                     <Link gitLink="https://github.com/NguyenCatNguyen/3D-Portfolio" />
                     </div>
 
                     <div className="project" ref={P3ref} >
-                    <div className="image-wrapper py-5 bg-[#274272] project-hover">
-                        <img src="/3D-Portfolio/images/project3.png" alt="YC Directory App" />
+                    <div className="image-wrapper py-5 bg-[#274272] hover:translate-y-[-5px] duration-400 transform ease-in-out">
+                        <a href="https://nguyencatnguyen.github.io/ZeldaWIki/" target="_blank" className='hover:translate-y-[-5px] duration-400 transform ease-in-out'>
+                            <img src="/3D-Portfolio/images/project3.png" alt="YC Directory App" />
+                        </a>
                     </div>
                     <h2 className='pb-2'>ZeldaWiki- BOTW Compedium</h2>
                     <Link webLink="https://nguyencatnguyen.github.io/ZeldaWIki/" gitLink="https://github.com/NguyenCatNguyen/ZeldaWIki"/>
