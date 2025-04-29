@@ -20,10 +20,10 @@ const Footer = () => {
         <div className="flex flex-col justify-center">
           <p>Terms & Conditions</p>
         </div>
-        <div className="socials">
+        <div className="socials justify-center">
           <FooterIcon icon={<FaLinkedin className="logo-icon" />} socialLink="https://www.linkedin.com/in/catnguyen1/" />
           <FooterIcon icon={<FaSquareGithub className="logo-icon"  />} socialLink="https://github.com/NguyenCatNguyen" />
-          <FooterIcon icon={<MdPictureAsPdf className="logo-icon" />} socialLink="./pdf/CatNguyen.pdf" />
+          <FooterIcon icon={<MdPictureAsPdf className="logo-icon" />} socialLink="/3D-Portfolio/pdf/CatNguyen.pdf" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">

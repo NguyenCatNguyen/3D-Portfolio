@@ -2,10 +2,21 @@ import React from 'react';
 import { words } from '../constants/index.js';
 import Button from "../components/Button";
 import HeroExperience from '../components/HeroModels/HeroExperience.jsx';
-
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap'
 import AnimatedCounter from '../components/AnimatedCounter.jsx';
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { MdPictureAsPdf } from "react-icons/md";
+
+
+const LinkIcon = ({icon, socialLink}) => {
+    return (
+      <a href={socialLink} className="icon" target="_blank" rel="social icon">
+        {icon}
+      </a>
+    )
+  }
 
 const Hero = () => {
     useGSAP(()=>{
@@ -65,6 +76,11 @@ const Hero = () => {
                 className="md:w-80 md:h-16 w-60 h-12 mt-5"
                 id="work"
                 />
+                <div className='socials justify-start z-50'>
+                    <LinkIcon icon={<FaLinkedin className="logo-icon" />} socialLink="https://www.linkedin.com/in/catnguyen1/" />
+                    <LinkIcon icon={<FaSquareGithub className="logo-icon"  />} socialLink="https://github.com/NguyenCatNguyen" />
+                    <LinkIcon icon={<MdPictureAsPdf className="logo-icon" />} socialLink="/3D-Portfolio/pdf/CatNguyen.pdf" />
+                </div>
             </header>
 
             {/* RIGHT 3D MODEL */}

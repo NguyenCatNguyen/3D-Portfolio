@@ -309,23 +309,19 @@ section {
     p {
       @apply text-center md:text-start;
     }
+  }
 
-    .socials {
-      @apply flex items-center justify-center gap-5;
+  .socials {
+    @apply flex gap-5;
 
-      .icon {
-        @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-300 hover:bg-black-50 hover:scale-110;
-      }
-
-      .logo-icon{
-        @apply size-6;
-      }
-
-      img {
-        @apply inline-block;
-      }
+    .icon {
+      @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-300 hover:bg-black-50 hover:scale-110;
+    }
+    .logo-icon{
+      @apply size-6;
     }
   }
+  
 }
 
 /* Hero text slider starts */
