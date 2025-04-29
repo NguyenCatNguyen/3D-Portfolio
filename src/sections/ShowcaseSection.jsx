@@ -102,7 +102,7 @@ const ShowcaseSection = () => {
                         </a>
                     </div>
                     <h2 className='pb-2'>3D Profolio</h2>
-                    <Link gitLink="https://github.com/NguyenCatNguyen/3D-Portfolio" />
+                    <Link gitLink="https://github.com/NguyenCatNguyen/3D-Portfolio" webLink="https://nguyencatnguyen.github.io/3D-Portfolio/" />
                     </div>
 
                     <div className="project" ref={P3ref} >
