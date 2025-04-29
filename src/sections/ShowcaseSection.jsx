@@ -97,7 +97,7 @@ const ShowcaseSection = () => {
                 <div className="project-list-wrapper overflow-hidden">
                     <div className="project" ref={P2ref} >
                     <div className="image-wrapper py-5 bg-[#51080d] mb-2  hover:translate-y-[-5px] duration-400 transform ease-in-out">
-                        <a href="https://nguyencatnguyen.github.io/ZentryGaming/" target="_blank">
+                        <a href="https://nguyencatnguyen.github.io/3D-Portfolio/" target="_blank">
                             <img src="/3D-Portfolio/images/project2.png" alt="Library Management Platform" /> 
                         </a>
                     </div>
