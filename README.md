@@ -10,7 +10,7 @@
     My Awesome 3D Portfolio
     <br />
     ✨
-    <a href="https://github.com/othneildrew/Best-README-Template">View Website</a>
+    <a href="https://nguyencatnguyen.github.io/3D-Portfolio/">View Website</a>
     ✨
   </p>
 </div>
